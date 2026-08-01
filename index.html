@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alvaro Menacho - Portfolio</title>
+    
+    <!-- Fuentes Barlow -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS (CDN para evitar Node.js) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Barlow', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', "Liberation Mono", "Courier New", 'monospace'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="app-body" class="bg-[#74534D] text-white transition-colors duration-700 font-sans min-h-screen flex flex-col justify-between overflow-x-hidden relative theme-dirty">
+    
+    <!-- HEADER -->
+    <header id="main-header" class="w-full py-6 px-8 border-b border-white/10 z-40 backdrop-blur-sm relative transition-colors duration-500">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span id="logo-text" class="text-sm font-bold font-mono tracking-widest text-white transition-colors"></span>
+            </div>
+
+            <div class="absolute left-1/2 transform -translate-x-1/2 text-center pointer-events-none md:pointer-events-auto">
+                <h1 id="main-title" class="text-sm md:text-base font-extrabold font-sans uppercase tracking-[0.3em] leading-tight select-none transition-colors duration-500 text-white">
+                    Developer Portfolio - Alvaro Menacho
+                </h1>
+            </div>
+
+            <div class="flex items-center gap-1.5 bg-black/10 p-1.5 rounded-full border border-white/5 shadow-inner">
+                <button id="btn-dirty" class="px-3.5 py-1 text-xs font-mono uppercase tracking-wider rounded-full transition-all duration-300 bg-white text-[#74534D] font-bold shadow-md scale-105">Dirty</button>
+                <button id="btn-clean" class="px-3.5 py-1 text-xs font-mono uppercase tracking-wider rounded-full transition-all duration-300 text-white/50 hover:text-white">Clean</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN WORKSPACE (CoverFlow) -->
+    <main class="flex-1 w-full max-w-7xl mx-auto flex flex-col justify-center items-center py-6 px-4 md:px-8 z-30 relative">
+        <div id="coverflow-container" class="relative w-full h-[55vh] flex flex-col items-center justify-center overflow-hidden select-none" style="perspective: 1000px;">
+            
+            <!-- Glow background -->
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20 transition-all duration-700">
+                <div id="ambient-glow" class="w-[450px] h-[450px] rounded-full blur-[100px] transition-colors duration-700"></div>
+            </div>
+
+            <!-- Carrusel de Cartas -->
+            <div id="carousel-track" class="relative w-full max-w-5xl h-[450px] flex items-center justify-center mt-16 md:mt-20">
+                <!-- Las cartas se inyectarán aquí con JavaScript -->
+            </div>
+
+            <!-- Controles -->
+            <div class="flex items-center justify-center gap-8 mt-12 z-20">
+                <button id="btn-prev" ></button>
+                <div id="pagination-dots" class="flex gap-2"></div>
+                <button id="btn-next" ></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="w-full py-6 px-8 border-t border-white/10 z-40 relative text-center md:text-left transition-colors duration-500">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <p id="footer-text" class="text-xs font-mono tracking-widest text-white/60 transition-colors">2026 ALVARO MENACHO</p>
+            </div>
+            <div class="flex gap-4" id="footer-links">
+                <a href="https://github.com/alvarovert" target="_blank" class="text-xs font-mono tracking-wider transition-colors text-white/70 hover:text-white hover:underline">GITHUB</a>
+                <span class="opacity-30">|</span>
+                <a href="mailto:alvaromenachojs@gmail.com" class="text-xs font-mono tracking-wider transition-colors text-white/70 hover:text-white hover:underline">EMAIL</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL (Oculto por defecto) -->
+    <div id="project-modal" class="fixed inset-0 flex items-center justify-center z-50 p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+        <div id="modal-backdrop" class="absolute inset-0 bg-black/60 backdrop-blur-md"></div>
+        <div id="modal-content" class="relative rounded-3xl p-6 md:p-8 border shadow-[0_25px_60px_-15px_rgba(0,0,0,0.4)] overflow-hidden flex flex-col justify-between w-[95%] max-h-[85vh] md:w-[40vw] md:h-[85vh] bg-[#4e332f] text-white border-white/10 transition-all duration-500 transform scale-95 translate-y-8">
+            <div id="modal-ribbon" class="absolute top-0 left-0 right-0 h-1.5 opacity-80"></div>
+            <div id="modal-inner" class="w-full h-full flex flex-col justify-between overflow-y-auto pr-1">
+                <!-- El contenido de la tarjeta se inyectará aquí -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
