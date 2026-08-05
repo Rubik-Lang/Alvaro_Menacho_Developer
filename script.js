@@ -85,6 +85,27 @@ const portfolioProjects = [
         { label: "Descargar App", url: "#", primary: false, icon: "external-link" }
       ]
     },
+    {
+      id: "kiwi",
+      title: "Kiwi",
+      subtitle: "Desktop App",
+      category: "04 / DESKTOP OFFICE AUTOMATION APP",
+      tagline: "Consolidar archivos Excels de forma rapida, sencilla y aplicando los filtros que quieras ",
+      coverBg: "url('./assets/logoKiwi.png')",
+      iconName: "wallet",
+      color: "#10B981",
+      description: "Kiwi es una aplicación amigable que te ayuda a consolidar los archivos excel que quieras aplicando los filtros de columnas o registros que desees.",
+      bullets: [
+        "Optimizada con Polars para Windows y macOS",
+        "Perfecta para oficinistas que trabajen con multiples archivos Excel",
+        "Consolida los registros y columnnas que te interecen aplicando los filtros facilmente desde la aplicación"
+      ],
+      techStack: ["Electron", "Python", "Polars"],
+      links: [
+        { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
+        { label: "Descargar App", url: "#", primary: false, icon: "external-link" }
+      ]
+    },
     // Nota: Por brevedad en la respuesta, puedes pegar aquí el resto de tus objetos Riquisssimo, Skills y Contacto exactamente igual que en tu archivo original.
 ];
 
