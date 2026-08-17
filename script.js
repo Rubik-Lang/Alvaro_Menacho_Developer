@@ -31,13 +31,13 @@ const portfolioProjects = [
       coverBg: "url('./assets/logoHaba.png')",
       iconName: "wallet",
       color: "#10B981",
-      description: "Haba es una aplicación nativa de escritorio diseñada y lanzada al mercado para ayudar a las personas a tomar el control absoluto de sus finanzas personales.",
+      description: "Haba está diseñada para promover y accesibilizar las finanzas personales proporcionándole a los usuarios una herramienta con la cual se sientan cómodos y a gusto conociendo su salud financiera",
       bullets: [
-        "Lanzada al mercado de forma independiente con un pipeline estable.",
+        "Lanzada al mercado de forma independiente con metricas y apartado de comentarios y sugerencias de usuarios.",
         "Base de datos optimizada localmente para garantizar privacidad.",
-        "Visualizaciones dinámicas y gráficos interactivos."
+        "Dashboard comprensible y estético."
       ],
-      techStack: ["Electron", "React", "TypeScript", "Tailwind CSS", "Posthog"],
+      techStack: ["Electron", "React", "HTML 5", "Tailwind CSS", "Posthog"],
       links: [
         { label: "Sitio Web", url: "https://alvarovert.github.io/Haba_page/", primary: true, icon: "external-link" },
         { label: "Descargar App", url: "#", primary: false, icon: "external-link" }
@@ -89,7 +89,7 @@ const portfolioProjects = [
       id: "kiwi",
       title: "Kiwi",
       subtitle: "Desktop App",
-      category: "04 / DESKTOP OFFICE AUTOMATION APP",
+      category: "04 / DESKTOP AUTOMATION APP",
       tagline: "Consolidar archivos Excels de forma rapida, sencilla y aplicando los filtros que quieras ",
       coverBg: "url('./assets/logoKiwi.png')",
       iconName: "wallet",
