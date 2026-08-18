@@ -25,50 +25,50 @@ const portfolioProjects = [
     {
       id: "haba",
       title: "Haba",
-      subtitle: "Finance App",
-      category: "01 / DESKTOP FINANCE APP",
+      subtitle: "Desktop Finance App",
+      category: "01 / DESKTOP APP",
       tagline: "Administración financiera Brillante, Agradable y Clara",
       coverBg: "url('./assets/logoHaba.png')",
       iconName: "wallet",
       color: "#10B981",
       description: "Haba está diseñada para promover y accesibilizar las finanzas personales proporcionándole a los usuarios una herramienta con la cual se sientan cómodos y a gusto conociendo su salud financiera",
       bullets: [
-        "Lanzada al mercado de forma independiente con metricas y apartado de comentarios y sugerencias de usuarios.",
-        "Base de datos optimizada localmente para garantizar privacidad.",
-        "Dashboard comprensible y estético."
+        "Lanzada al mercado de forma independiente y con usuarios activos en macOS y Windows",
+        "Implementación de PostHog para obtener metricas de usuarios",
+        "Comunicación activa con usurios mediante un apartado dentro de Haba dedicado a sus comentarios y recomendaciones"
       ],
       techStack: ["Electron", "React", "HTML 5", "Tailwind CSS", "Posthog"],
       links: [
         { label: "Sitio Web", url: "https://alvarovert.github.io/Haba_page/", primary: true, icon: "external-link" },
-        { label: "Descargar App", url: "#", primary: false, icon: "external-link" }
       ]
     },
     {
       id: "riquisssimo",
       title: "Riquisssimo",
-      subtitle: "Desktop Finance App",
-      category: "02 / MOBILE RECIPE APP",
-      tagline: "Administración financiera de alto rendimiento para escritorio.",
+      subtitle: "Mobile Recipe App",
+      category: "02 / MOBILE APP",
+      tagline: "Cocina algo Riquisimo con los alimentos que ya tienes",
       coverBg: "url('./assets/logoRiquisssimo.png')",
       iconName: "wallet",
       color: "#10B981",
-      description: "Haba es una aplicación nativa de escritorio diseñada y lanzada al mercado para ayudar a las personas a tomar el control absoluto de sus finanzas personales.",
+      description: "Riquisssimo esta hecho par los que tiene hambre, los que tienen antojo, para los que no saben que cocinar pero tiene un par de cosas en la refrigeradora. Usualmente las aplicaciones de cocina funcionan diciéndole al usuario que comprar para hacer cierta receta, Riquisssimo en cambio te dice que recetas puedes hacer basado en lo que ya tienes o los ingredientes que quieras usar",
       bullets: [
-        "Lanzada al mercado de forma independiente con un pipeline estable.",
-        "Base de datos optimizada localmente para garantizar privacidad.",
-        "Visualizaciones dinámicas y gráficos interactivos."
+        "Integración con la API de Google Gemini",
+        "Prompt internto eficiente para crear un balance entre proponer buenas recetas y la velocidad con las que son propuestas ",
+        "Instrucciones de preparación muy claros con los detalles de la dificultad y el tiempo empleado para cocinar"
       ],
-      techStack: ["React", "Tailwind CSS", "Gemini API"],
+      techStack: ["Flutter", "Dart", "Gemini API"],
       links: [
-        { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
-        { label: "Descargar App", url: "#", primary: false, icon: "external-link" }
+      /*  { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
+        { label: "Descargar App", url: "#", primary: false, icon: "external-link" } */
       ]
     },
+    /*
     {
       id: "bubu",
       title: "Bubu",
-      subtitle: "Desktop Finance App",
-      category: "03 / MOBILE SOCIAL APP",
+      subtitle: "Mobile Social App",
+      category: "03 / MOBILE APP",
       tagline: "Administración financiera de alto rendimiento para escritorio.",
       coverBg: "url('./assets/logoBubu.png')",
       iconName: "wallet",
@@ -84,26 +84,26 @@ const portfolioProjects = [
         { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
         { label: "Descargar App", url: "#", primary: false, icon: "external-link" }
       ]
-    },
+    }, */
     {
       id: "kiwi",
       title: "Kiwi",
-      subtitle: "Desktop App",
-      category: "04 / DESKTOP AUTOMATION APP",
-      tagline: "Consolidar archivos Excels de forma rapida, sencilla y aplicando los filtros que quieras ",
+      subtitle: "Desktop Office Automation App",
+      category: "03 / DESKTOP APP",
+      tagline: "Consolidar archivos Excels de forma rapida, sencilla y comoda ",
       coverBg: "url('./assets/logoKiwi.png')",
       iconName: "wallet",
       color: "#10B981",
-      description: "Kiwi es una aplicación amigable que te ayuda a consolidar los archivos excel que quieras aplicando los filtros de columnas o registros que desees.",
+      description: "Kiwi es una aplicación amigable que te ayuda a consolidar todos los archivos excel que quieras aplicando los filtros de columnas o registros que desees.",
       bullets: [
-        "Optimizada con Polars para Windows y macOS",
-        "Perfecta para oficinistas que trabajen con multiples archivos Excel",
-        "Consolida los registros y columnnas que te interecen aplicando los filtros facilmente desde la aplicación"
+        "Optimizada con Polars para no consumir tantos recursos en procesamientos grandes",
+        "Automatiza una tarea altamente repetitiva en interfaz altamente amigable y funcional",
+        "Selección de todos los archivos excel que se necesiten, además de la opción de aplicar filtros de columnas y/o registros para la consolidación"
       ],
-      techStack: ["Electron", "Python", "Polars"],
+      techStack: ["Electron", "Python", "Polars", "Node", "JavaScript ES6"],
       links: [
-        { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
-        { label: "Descargar App", url: "#", primary: false, icon: "external-link" }
+        /* { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
+        { label: "Descargar App", url: "#", primary: false, icon: "external-link" } */
       ]
     },
     // Nota: Por brevedad en la respuesta, puedes pegar aquí el resto de tus objetos Riquisssimo, Skills y Contacto exactamente igual que en tu archivo original.
