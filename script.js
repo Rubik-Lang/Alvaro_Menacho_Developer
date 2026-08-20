@@ -39,7 +39,7 @@ const portfolioProjects = [
       ],
       techStack: ["Electron", "React", "HTML 5", "Tailwind CSS", "Posthog"],
       links: [
-        { label: "Sitio Web", url: "https://alvarovert.github.io/Haba_page/", primary: true, icon: "external-link" },
+        { label: "Sitio Web", url: "https://rubik-lang.github.io/Haba_page/", primary: true, icon: "external-link" },
       ]
     },
     {
