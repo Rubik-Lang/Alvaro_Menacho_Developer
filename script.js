@@ -106,7 +106,28 @@ const portfolioProjects = [
         { label: "Descargar App", url: "#", primary: false, icon: "external-link" } */
       ]
     },
-    // Nota: Por brevedad en la respuesta, puedes pegar aquí el resto de tus objetos Riquisssimo, Skills y Contacto exactamente igual que en tu archivo original.
+        {
+      id: "iwassi",
+      title: "iWassi",
+      subtitle: "Web App",
+      category: "03 / WEB APP",
+      tagline: " Envia mensajes de whatsapp a todos tus contactos con unos pocos clicks",
+      coverBg: "url('./assets/logoiWassi.png')",
+      iconName: "wallet",
+      color: "#10B981",
+      description: "Iwassi es una aplicación web que agiliza el envio de mensajes, de texto y archivos, a multiples contactos en pocos minutos. En lugar de tipiar el mismo mensaje una y otra vez para enviarselo a diversos contactos, ingresas todos los numeros telefonicos, escribe el mensaje o adjunta algún archivo y se enviará a todos esos contactos sin que tengas que hacer nada más",
+      bullets: [
+        "Vincula tu numero de telefonico de forma rapida con un QR",
+        "Ajusta los intervalos de tiempo entre mensajes para evitar el baneo",
+        ""
+      ],
+      techStack: ["React", "cloudflared", "Tailwind CSS", "Node", "JavaScript ES6"],
+      links: [
+        /* { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
+        { label: "Descargar App", url: "#", primary: false, icon: "external-link" } */
+      ]
+    },
+    
 ];
 
 // 2. Estado Global
