@@ -1,133 +1,135 @@
 // 1. Datos del Portafolio
 const portfolioProjects = [
-    /*{
-      id: "yo",
-      title: "Yo / Resume",
-      subtitle: "Álvaro Menacho",
-      category: "01 / PORTFOLIO",
-      tagline: "Desarrollador de Productos Digitales End-to-End",
-      coverBg: "linear-gradient(135deg, #2b1f1d 0%, #4a3431 100%)",
-      iconName: "user",
-      color: "#E2BA49",
-      description: "Soy un desarrollador de software con enfoque absoluto en producto y experiencia de usuario. No me considero un perfil junior tradicional porque tengo la capacidad de diseñar, estructurar, programar y lanzar aplicaciones completas y complejas de forma autónoma...",
-      bullets: [
-        "Perfil autodidacta con pasión por la excelencia técnica y el diseño de interfaces limpias.",
-        "Creador de Haba, un gestor de finanzas personales para desktop completamente desarrollado y lanzado al mercado.",
-        "Creador de Riquisssimo, una app nativa para iOS en TestFlight que integra IA.",
-        "Mentalidad orientada a la resolución de problemas."
-      ],
-      techStack: ["React", "TypeScript", "SwiftUI", "Electron", "Vite", "Node.js", "Gemini API"],
-      links: [
-        { label: "Ver GitHub", url: "https://github.com/alvaromenachojs", primary: true, icon: "github" },
-        { label: "LinkedIn", url: "https://linkedin.com/in/alvaromenacho", primary: false, icon: "linkedin" }
-      ]
-    },*/
-    {
-      id: "haba",
-      title: "Haba",
-      subtitle: "Desktop Finance App",
-      category: "01 / DESKTOP APP",
-      tagline: "Administración financiera Brillante, Agradable y Clara",
-      coverBg: "url('./assets/logoHaba.png')",
-      iconName: "wallet",
-      color: "#10B981",
-      description: "Haba está diseñada para promover y accesibilizar las finanzas personales proporcionándole a los usuarios una herramienta con la cual se sientan cómodos y a gusto conociendo su salud financiera",
-      bullets: [
-        "Lanzada al mercado de forma independiente y con usuarios activos en macOS y Windows",
-        "Implementación de PostHog para obtener metricas de usuarios",
-        "Comunicación activa con usurios mediante un apartado dentro de Haba dedicado a sus comentarios y recomendaciones"
-      ],
-      techStack: ["Electron", "React", "HTML 5", "Tailwind CSS", "Posthog"],
-      links: [
-        { label: "Sitio Web", url: "https://rubik-lang.github.io/Haba_page/", primary: true, icon: "external-link" },
-      ]
-    },
-    {
-      id: "riquisssimo",
-      title: "Riquisssimo",
-      subtitle: "Mobile Recipe App",
-      category: "02 / MOBILE APP",
-      tagline: "Cocina algo Riquisimo con los alimentos que ya tienes",
-      coverBg: "url('./assets/logoRiquisssimo.png')",
-      iconName: "wallet",
-      color: "#10B981",
-      description: "Riquisssimo esta hecho par los que tiene hambre, los que tienen antojo, para los que no saben que cocinar pero tiene un par de cosas en la refrigeradora. Usualmente las aplicaciones de cocina funcionan diciéndole al usuario que comprar para hacer cierta receta, Riquisssimo en cambio te dice que recetas puedes hacer basado en lo que ya tienes o los ingredientes que quieras usar",
-      bullets: [
-        "Integración con la API de Google Gemini",
-        "Prompt internto eficiente para crear un balance entre proponer buenas recetas y la velocidad con las que son propuestas ",
-        "Instrucciones de preparación muy claros con los detalles de la dificultad y el tiempo empleado para cocinar"
-      ],
-      techStack: ["Flutter", "Dart", "Gemini API"],
-      links: [
-      /*  { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
-        { label: "Descargar App", url: "#", primary: false, icon: "external-link" } */
-      ]
-    },
-    /*
-    {
-      id: "bubu",
-      title: "Bubu",
-      subtitle: "Mobile Social App",
-      category: "03 / MOBILE APP",
-      tagline: "Administración financiera de alto rendimiento para escritorio.",
-      coverBg: "url('./assets/logoBubu.png')",
-      iconName: "wallet",
-      color: "#10B981",
-      description: "Haba es una aplicación nativa de escritorio diseñada y lanzada al mercado para ayudar a las personas a tomar el control absoluto de sus finanzas personales.",
-      bullets: [
-        "Lanzada al mercado de forma independiente con un pipeline estable.",
-        "Base de datos optimizada localmente para garantizar privacidad.",
-        "Visualizaciones dinámicas y gráficos interactivos."
-      ],
-      techStack: ["React", "TypeScript", "OnGrok"],
-      links: [
-        { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
-        { label: "Descargar App", url: "#", primary: false, icon: "external-link" }
-      ]
-    }, */
-    {
-      id: "kiwi",
-      title: "Kiwi",
-      subtitle: "Desktop Office Automation App",
-      category: "03 / DESKTOP APP",
-      tagline: "Consolidar archivos Excels de forma rapida, sencilla y comoda ",
-      coverBg: "url('./assets/logoKiwi.png')",
-      iconName: "wallet",
-      color: "#10B981",
-      description: "Kiwi es una aplicación amigable que te ayuda a consolidar todos los archivos excel que quieras aplicando los filtros de columnas o registros que desees.",
-      bullets: [
-        "Optimizada con Polars para no consumir tantos recursos en procesamientos grandes",
-        "Automatiza una tarea altamente repetitiva en interfaz altamente amigable y funcional",
-        "Selección de todos los archivos excel que se necesiten, además de la opción de aplicar filtros de columnas y/o registros para la consolidación"
-      ],
-      techStack: ["Electron", "Python", "Polars", "Node", "JavaScript ES6"],
-      links: [
-        /* { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
-        { label: "Descargar App", url: "#", primary: false, icon: "external-link" } */
-      ]
-    },
-        {
-      id: "iwassi",
-      title: "iWassi",
-      subtitle: "Web App",
-      category: "03 / WEB APP",
-      tagline: " Envia mensajes de whatsapp a todos tus contactos con unos pocos clicks",
-      coverBg: "url('./assets/logoiWassi.png')",
-      iconName: "wallet",
-      color: "#10B981",
-      description: "Iwassi es una aplicación web que agiliza el envio de mensajes, de texto y archivos, a multiples contactos en pocos minutos. En lugar de tipiar el mismo mensaje una y otra vez para enviarselo a diversos contactos, ingresas todos los numeros telefonicos, escribe el mensaje o adjunta algún archivo y se enviará a todos esos contactos sin que tengas que hacer nada más",
-      bullets: [
-        "Vincula tu numero de telefonico de forma rapida con un QR",
-        "Ajusta los intervalos de tiempo entre mensajes para evitar el baneo",
-        ""
-      ],
-      techStack: ["React", "cloudflared", "Tailwind CSS", "Node", "JavaScript ES6"],
-      links: [
-        /* { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
-        { label: "Descargar App", url: "#", primary: false, icon: "external-link" } */
-      ]
-    },
-    
+  /*{
+    id: "yo",
+    title: "Yo / Resume",
+    subtitle: "Álvaro Menacho",
+    category: "01 / PORTFOLIO",
+    tagline: "Desarrollador de Productos Digitales End-to-End",
+    coverBg: "linear-gradient(135deg, #2b1f1d 0%, #4a3431 100%)",
+    iconName: "user",
+    color: "#E2BA49",
+    description: "Soy un desarrollador de software con enfoque absoluto en producto y experiencia de usuario. No me considero un perfil junior tradicional porque tengo la capacidad de diseñar, estructurar, programar y lanzar aplicaciones completas y complejas de forma autónoma...",
+    bullets: [
+      "Perfil autodidacta con pasión por la excelencia técnica y el diseño de interfaces limpias.",
+      "Creador de Haba, un gestor de finanzas personales para desktop completamente desarrollado y lanzado al mercado.",
+      "Creador de Riquisssimo, una app nativa para iOS en TestFlight que integra IA.",
+      "Mentalidad orientada a la resolución de problemas."
+    ],
+    techStack: ["React", "TypeScript", "SwiftUI", "Electron", "Vite", "Node.js", "Gemini API"],
+    links: [
+      { label: "Ver GitHub", url: "https://github.com/alvaromenachojs", primary: true, icon: "github" },
+      { label: "LinkedIn", url: "https://linkedin.com/in/alvaromenacho", primary: false, icon: "linkedin" }
+    ]
+  },*/
+  {
+    id: "haba",
+    title: "Haba",
+    subtitle: "Finance App",
+    category: "01 / MOBILE APP",
+    tagline: "Administración financiera Brillante, Agradable y Clara",
+    coverBg: "url('./assets/logoHaba.png')",
+    iconName: "wallet",
+    color: "#10B981",
+    description: "Haba está diseñada para promover y accesibilizar las finanzas personales proporcionándole a los usuarios una herramienta con la cual se sientan cómodos y a gusto conociendo su salud financiera",
+    bullets: [
+      "Lanzada al mercado de forma independiente y con usuarios activos en ios y android",
+      "Implementación de PostHog para obtener metricas de usuarios",
+      "Comunicación activa con usurios mediante un apartado dentro de Haba dedicado a sus comentarios y recomendaciones"
+    ],
+    techStack: ["Electron", "React", "HTML 5", "Tailwind CSS", "Posthog"],
+    links: [
+      { label: "Sitio Web", url: "https://rubik-lang.github.io/Haba_page/", primary: true, icon: "external-link" },
+    ]
+  },
+  /*
+  {
+    id: "riquisssimo",
+    title: "Riquisssimo",
+    subtitle: "Mobile Recipe App",
+    category: "02 / MOBILE APP",
+    tagline: "Cocina algo Riquisimo con los alimentos que ya tienes",
+    coverBg: "url('./assets/logoRiquisssimo.png')",
+    iconName: "wallet",
+    color: "#10B981",
+    description: "Riquisssimo esta hecho par los que tiene hambre, los que tienen antojo, para los que no saben que cocinar pero tiene un par de cosas en la refrigeradora. Usualmente las aplicaciones de cocina funcionan diciéndole al usuario que comprar para hacer cierta receta, Riquisssimo en cambio te dice que recetas puedes hacer basado en lo que ya tienes o los ingredientes que quieras usar",
+    bullets: [
+      "Integración con la API de Google Gemini",
+      "Prompt internto eficiente para crear un balance entre proponer buenas recetas y la velocidad con las que son propuestas ",
+      "Instrucciones de preparación muy claros con los detalles de la dificultad y el tiempo empleado para cocinar"
+    ],
+    techStack: ["Flutter", "Dart", "Gemini API"],
+    links: [
+    { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
+      { label: "Descargar App", url: "#", primary: false, icon: "external-link" } 
+    ]
+  },
+
+  {
+    id: "bubu",
+    title: "Bubu",
+    subtitle: "Mobile Social App",
+    category: "03 / MOBILE APP",
+    tagline: "Administración financiera de alto rendimiento para escritorio.",
+    coverBg: "url('./assets/logoBubu.png')",
+    iconName: "wallet",
+    color: "#10B981",
+    description: "Haba es una aplicación nativa de escritorio diseñada y lanzada al mercado para ayudar a las personas a tomar el control absoluto de sus finanzas personales.",
+    bullets: [
+      "Lanzada al mercado de forma independiente con un pipeline estable.",
+      "Base de datos optimizada localmente para garantizar privacidad.",
+      "Visualizaciones dinámicas y gráficos interactivos."
+    ],
+    techStack: ["React", "TypeScript", "OnGrok"],
+    links: [
+      { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
+      { label: "Descargar App", url: "#", primary: false, icon: "external-link" }
+    ]
+  }, 
+  {
+    id: "kiwi",
+    title: "Kiwi",
+    subtitle: "Desktop Office Automation App",
+    category: "03 / DESKTOP APP",
+    tagline: "Consolidar archivos Excels de forma rapida, sencilla y comoda ",
+    coverBg: "url('./assets/logoKiwi.png')",
+    iconName: "wallet",
+    color: "#10B981",
+    description: "Kiwi es una aplicación amigable que te ayuda a consolidar todos los archivos excel que quieras aplicando los filtros de columnas o registros que desees.",
+    bullets: [
+      "Optimizada con Polars para no consumir tantos recursos en procesamientos grandes",
+      "Automatiza una tarea altamente repetitiva en interfaz altamente amigable y funcional",
+      "Selección de todos los archivos excel que se necesiten, además de la opción de aplicar filtros de columnas y/o registros para la consolidación"
+    ],
+    techStack: ["Electron", "Python", "Polars", "Node", "JavaScript ES6"],
+    links: [
+      { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
+      { label: "Descargar App", url: "#", primary: false, icon: "external-link" }
+    ]
+  }, */
+  {
+    id: "iwassi",
+    title: "iWassi",
+    subtitle: "Web App",
+    category: "02 / WEB APP",
+    tagline: " Envia mensajes de whatsapp automatizados",
+    coverBg: "url('./assets/logoiWassi.png')",
+    iconName: "wallet",
+    color: "#10B981",
+    description: "Iwassi fue desarrollado para el area de ventas de Buro Group. Esta aplicación fue solicitada por la jefe de ventas en ese momento y junto al feedback de vendedores seleccionados la aplicación fue tomando forma hasta ser la herramienta por la cual el area de ventas contactaba nuevos leads",
+    bullets: [
+      "Vinculación de cuentas de WhatsApp con QR",
+      "Mensajes personalizados para cada contacto",
+      "Contactos y registros almacenados en la base de datos SQL Server de la empresa para obtener insight",
+      "Se llegaron a enviar hasta 3k mensajes al día y hasta 10k mensajes a la semana",
+    ],
+    techStack: ["React", "ngrok", "Tailwind CSS", "Node", "JavaScript ES6", "SQL Server"],
+    links: [
+      /* { label: "Sitio Web", url: "#", primary: true, icon: "external-link" },
+      { label: "Descargar App", url: "#", primary: false, icon: "external-link" } */
+    ]
+  },
+
 ];
 
 // 2. Estado Global
@@ -144,38 +146,38 @@ const footer = document.getElementById('main-footer');
 
 // 4. Renderizado del Carrusel 3D
 function renderCarousel() {
-    carouselTrack.innerHTML = '';
-    paginationDots.innerHTML = '';
+  carouselTrack.innerHTML = '';
+  paginationDots.innerHTML = '';
 
-    // Actualizar Glow
-    ambientGlow.style.background = portfolioProjects[activeIndex]?.color || "#FFD73B";
+  // Actualizar Glow
+  ambientGlow.style.background = portfolioProjects[activeIndex]?.color || "#FFD73B";
 
-    portfolioProjects.forEach((project, index) => {
-        const offset = index - activeIndex;
-        const absOffset = Math.abs(offset);
-        const isCenter = index === activeIndex;
+  portfolioProjects.forEach((project, index) => {
+    const offset = index - activeIndex;
+    const absOffset = Math.abs(offset);
+    const isCenter = index === activeIndex;
 
-        // Matemáticas 3D extraídas de tu código React
-        const xTranslation = offset * 140 + (offset > 0 ? 60 : offset < 0 ? -60 : 0);
-        const zTranslation = -150 * absOffset;
-        const rotationY = offset > 0 ? -45 : offset < 0 ? 45 : 0;
-        const opacityValue = absOffset === 0 ? 1 : absOffset === 1 ? 0.7 : absOffset === 2 ? 0.4 : 0.15;
-        const scaleValue = isCenter ? 1.05 : 0.85;
-        const zIndex = 50 - absOffset;
+    // Matemáticas 3D extraídas de tu código React
+    const xTranslation = offset * 140 + (offset > 0 ? 60 : offset < 0 ? -60 : 0);
+    const zTranslation = -150 * absOffset;
+    const rotationY = offset > 0 ? -45 : offset < 0 ? 45 : 0;
+    const opacityValue = absOffset === 0 ? 1 : absOffset === 1 ? 0.7 : absOffset === 2 ? 0.4 : 0.15;
+    const scaleValue = isCenter ? 1.05 : 0.85;
+    const zIndex = 50 - absOffset;
 
-        // Estilos condicionales por tema
-        const isDirty = theme === 'dirty';
-        const borderColor = isCenter ? (isDirty ? "border-white/50 ring-4 ring-white/10" : "border-[#FFD73B] ring-4 ring-[#FFD73B]/20") : "border-transparent";
-        const titleColor = isDirty ? "text-white" : "text-[#FFD73B]";
+    // Estilos condicionales por tema
+    const isDirty = theme === 'dirty';
+    const borderColor = isCenter ? (isDirty ? "border-white/50 ring-4 ring-white/10" : "border-[#FFD73B] ring-4 ring-[#FFD73B]/20") : "border-transparent";
+    const titleColor = isDirty ? "text-white" : "text-[#FFD73B]";
 
-        // Crear la carta
-        const card = document.createElement('div');
-        card.className = `card-3d absolute w-[240px] h-[240px] md:w-[280px] md:h-[280px] cursor-pointer group rounded-xl shadow-2xl overflow-visible flex flex-col items-center justify-end`;
-        card.style.transform = `translateX(${xTranslation}px) translateZ(${zTranslation}px) rotateY(${rotationY}deg) scale(${scaleValue})`;
-        card.style.opacity = opacityValue;
-        card.style.zIndex = zIndex;
+    // Crear la carta
+    const card = document.createElement('div');
+    card.className = `card-3d absolute w-[240px] h-[240px] md:w-[280px] md:h-[280px] cursor-pointer group rounded-xl shadow-2xl overflow-visible flex flex-col items-center justify-end`;
+    card.style.transform = `translateX(${xTranslation}px) translateZ(${zTranslation}px) rotateY(${rotationY}deg) scale(${scaleValue})`;
+    card.style.opacity = opacityValue;
+    card.style.zIndex = zIndex;
 
-        card.innerHTML = `
+    card.innerHTML = `
             <div class="absolute -top-12 left-0 right-0 text-center transition-all duration-300 pointer-events-none ${isCenter ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}">
                 <span class="text-xs uppercase tracking-[0.25em] font-medium block mb-1 ${isDirty ? 'text-white/60' : 'text-[#FFD73B]/70'}">${project.category}</span>
                 <h3 class="text-xl md:text-2xl font-bold font-sans uppercase tracking-widest ${titleColor}" style="text-shadow: ${!isDirty ? '1px 1px 0px rgba(0,0,0,0.15)' : 'none'}">${project.title}</h3>
@@ -184,28 +186,27 @@ function renderCarousel() {
             </div>
         `;
 
-        card.onclick = () => {
-            if (isCenter) openModal(project);
-            else {
-                activeIndex = index;
-                renderCarousel();
-            }
-        };
+    card.onclick = () => {
+      if (isCenter) openModal(project);
+      else {
+        activeIndex = index;
+        renderCarousel();
+      }
+    };
 
-        carouselTrack.appendChild(card);
+    carouselTrack.appendChild(card);
 
-        // Crear Puntos de Paginación
-        const dot = document.createElement('button');
-        dot.className = `h-2.5 rounded-full transition-all duration-300 ${
-            isCenter 
-                ? (isDirty ? "w-8 bg-white" : "w-8 bg-[#FFD73B]") 
-                : (isDirty ? "w-2.5 bg-white/20 hover:bg-white/50" : "w-2.5 bg-[#FFD73B]/30 hover:bg-[#FFD73B]/60")
-        }`;
-        dot.onclick = () => { activeIndex = index; renderCarousel(); };
-        paginationDots.appendChild(dot);
-    });
+    // Crear Puntos de Paginación
+    const dot = document.createElement('button');
+    dot.className = `h-2.5 rounded-full transition-all duration-300 ${isCenter
+      ? (isDirty ? "w-8 bg-white" : "w-8 bg-[#FFD73B]")
+      : (isDirty ? "w-2.5 bg-white/20 hover:bg-white/50" : "w-2.5 bg-[#FFD73B]/30 hover:bg-[#FFD73B]/60")
+      }`;
+    dot.onclick = () => { activeIndex = index; renderCarousel(); };
+    paginationDots.appendChild(dot);
+  });
 
-    lucide.createIcons(); // Renderizar iconos recién insertados
+  lucide.createIcons(); // Renderizar iconos recién insertados
 }
 
 // 5. Manejo del Modal (ProjectDetails)
@@ -214,12 +215,12 @@ const modalInner = document.getElementById('modal-inner');
 const modalRibbon = document.getElementById('modal-ribbon');
 
 function openModal(project) {
-    const isDirty = theme === 'dirty';
-    
-    modalRibbon.style.background = `linear-gradient(90deg, transparent, ${project.color}, transparent)`;
-    
-    // Inyectar HTML del detalle del proyecto respetando tu estructura original
-    modalInner.innerHTML = `
+  const isDirty = theme === 'dirty';
+
+  modalRibbon.style.background = `linear-gradient(90deg, transparent, ${project.color}, transparent)`;
+
+  // Inyectar HTML del detalle del proyecto respetando tu estructura original
+  modalInner.innerHTML = `
         <div class="flex justify-between items-start border-b border-white/10 pb-4 mb-4">
             <div>
                 <span class="text-[10px] font-mono tracking-widest block uppercase ${isDirty ? "text-white/50" : "text-stone-400"}">${project.category}</span>
@@ -265,13 +266,13 @@ function openModal(project) {
             `).join('')}
         </div>
     `;
-    
-    modal.classList.add('modal-active');
-    lucide.createIcons();
+
+  modal.classList.add('modal-active');
+  lucide.createIcons();
 }
 
 function closeModal() {
-    modal.classList.remove('modal-active');
+  modal.classList.remove('modal-active');
 }
 
 // Cerrar modal al hacer click en el fondo oscuro
@@ -279,48 +280,48 @@ document.getElementById('modal-backdrop').addEventListener('click', closeModal);
 
 // 6. Controles y Eventos Globales
 document.getElementById('btn-prev').addEventListener('click', () => {
-    if(activeIndex > 0) { activeIndex--; renderCarousel(); }
+  if (activeIndex > 0) { activeIndex--; renderCarousel(); }
 });
 document.getElementById('btn-next').addEventListener('click', () => {
-    if(activeIndex < portfolioProjects.length - 1) { activeIndex++; renderCarousel(); }
+  if (activeIndex < portfolioProjects.length - 1) { activeIndex++; renderCarousel(); }
 });
 window.addEventListener('keydown', (e) => {
-    if (e.key === "ArrowLeft" && activeIndex > 0) { activeIndex--; renderCarousel(); }
-    if (e.key === "ArrowRight" && activeIndex < portfolioProjects.length - 1) { activeIndex++; renderCarousel(); }
-    if (e.key === "Escape") { closeModal(); }
+  if (e.key === "ArrowLeft" && activeIndex > 0) { activeIndex--; renderCarousel(); }
+  if (e.key === "ArrowRight" && activeIndex < portfolioProjects.length - 1) { activeIndex++; renderCarousel(); }
+  if (e.key === "Escape") { closeModal(); }
 });
 
 // 7. Sistema de Temas (Dirty / Clean)
 function applyTheme() {
-    const isDirty = theme === 'dirty';
-    
-    // Configuración general del body
-    body.className = `min-h-screen flex flex-col justify-between overflow-x-hidden relative transition-colors duration-700 font-sans ${isDirty ? "bg-[#74534D] text-white" : "bg-white text-stone-900"}`;
-    header.className = `w-full py-6 px-8 border-b z-40 backdrop-blur-sm relative transition-colors duration-500 ${isDirty ? "border-white/10" : "border-stone-200"}`;
-    footer.className = `w-full py-6 px-8 border-t z-40 relative text-center md:text-left transition-colors duration-500 ${isDirty ? "border-white/10" : "border-stone-200"}`;
-    
-    // Título y Logo
-    document.getElementById('logo-text').className = `text-sm font-bold font-mono tracking-widest transition-colors ${isDirty ? "text-white" : "text-black"}`;
-    document.getElementById('main-title').className = `text-sm md:text-base font-extrabold font-sans uppercase tracking-[0.3em] leading-tight select-none transition-colors duration-500 ${isDirty ? "text-white" : "text-[#FFD73B]"}`;
-    document.getElementById('main-title').style.textShadow = !isDirty ? "1px 1px 0px rgba(0,0,0,0.1)" : "none";
+  const isDirty = theme === 'dirty';
 
-    // Botones del Tema
-    document.getElementById('btn-dirty').className = `px-3.5 py-1 text-xs font-mono uppercase tracking-wider rounded-full transition-all duration-300 ${isDirty ? "bg-white text-[#74534D] font-bold shadow-md scale-105" : "text-stone-400 hover:text-stone-600 bg-transparent"}`;
-    document.getElementById('btn-clean').className = `px-3.5 py-1 text-xs font-mono uppercase tracking-wider rounded-full transition-all duration-300 ${!isDirty ? "bg-[#FFD73B] text-black font-extrabold shadow-md scale-105" : "text-white/50 hover:text-white bg-transparent"}`;
+  // Configuración general del body
+  body.className = `min-h-screen flex flex-col justify-between overflow-x-hidden relative transition-colors duration-700 font-sans ${isDirty ? "bg-[#74534D] text-white" : "bg-white text-stone-900"}`;
+  header.className = `w-full py-6 px-8 border-b z-40 backdrop-blur-sm relative transition-colors duration-500 ${isDirty ? "border-white/10" : "border-stone-200"}`;
+  footer.className = `w-full py-6 px-8 border-t z-40 relative text-center md:text-left transition-colors duration-500 ${isDirty ? "border-white/10" : "border-stone-200"}`;
 
-    // Links del Footer
-    document.getElementById('footer-text').className = `text-xs font-mono tracking-widest transition-colors ${isDirty ? "text-white/60" : "text-stone-400"}`;
-    const links = document.querySelectorAll('#footer-links a');
-    links.forEach(link => {
-        link.className = `text-xs font-mono tracking-wider transition-colors hover:underline ${isDirty ? "text-white/70 hover:text-white" : "text-stone-500 hover:text-black"}`;
-    });
+  // Título y Logo
+  document.getElementById('logo-text').className = `text-sm font-bold font-mono tracking-widest transition-colors ${isDirty ? "text-white" : "text-black"}`;
+  document.getElementById('main-title').className = `text-sm md:text-base font-extrabold font-sans uppercase tracking-[0.3em] leading-tight select-none transition-colors duration-500 ${isDirty ? "text-white" : "text-[#FFD73B]"}`;
+  document.getElementById('main-title').style.textShadow = !isDirty ? "1px 1px 0px rgba(0,0,0,0.1)" : "none";
 
-    // Fondo del Modal
-    const modalContent = document.getElementById('modal-content');
-    modalContent.className = `relative rounded-3xl p-6 md:p-8 border shadow-[0_25px_60px_-15px_rgba(0,0,0,0.4)] overflow-hidden flex flex-col justify-between w-[95%] max-h-[85vh] md:w-[40vw] md:h-[85vh] transition-all duration-500 transform scale-95 translate-y-8 ${isDirty ? "bg-[#4e332f] text-white border-white/10" : "bg-white text-stone-900 border-stone-200"}`;
-    modalContent.style.boxShadow = !isDirty ? "0px 10px 40px rgba(0,0,0,0.12), inset 0 0 0 1px rgba(0,0,0,0.03)" : "0 25px 60px -15px rgba(0,0,0,0.4)";
+  // Botones del Tema
+  document.getElementById('btn-dirty').className = `px-3.5 py-1 text-xs font-mono uppercase tracking-wider rounded-full transition-all duration-300 ${isDirty ? "bg-white text-[#74534D] font-bold shadow-md scale-105" : "text-stone-400 hover:text-stone-600 bg-transparent"}`;
+  document.getElementById('btn-clean').className = `px-3.5 py-1 text-xs font-mono uppercase tracking-wider rounded-full transition-all duration-300 ${!isDirty ? "bg-[#FFD73B] text-black font-extrabold shadow-md scale-105" : "text-white/50 hover:text-white bg-transparent"}`;
 
-    renderCarousel();
+  // Links del Footer
+  document.getElementById('footer-text').className = `text-xs font-mono tracking-widest transition-colors ${isDirty ? "text-white/60" : "text-stone-400"}`;
+  const links = document.querySelectorAll('#footer-links a');
+  links.forEach(link => {
+    link.className = `text-xs font-mono tracking-wider transition-colors hover:underline ${isDirty ? "text-white/70 hover:text-white" : "text-stone-500 hover:text-black"}`;
+  });
+
+  // Fondo del Modal
+  const modalContent = document.getElementById('modal-content');
+  modalContent.className = `relative rounded-3xl p-6 md:p-8 border shadow-[0_25px_60px_-15px_rgba(0,0,0,0.4)] overflow-hidden flex flex-col justify-between w-[95%] max-h-[85vh] md:w-[40vw] md:h-[85vh] transition-all duration-500 transform scale-95 translate-y-8 ${isDirty ? "bg-[#4e332f] text-white border-white/10" : "bg-white text-stone-900 border-stone-200"}`;
+  modalContent.style.boxShadow = !isDirty ? "0px 10px 40px rgba(0,0,0,0.12), inset 0 0 0 1px rgba(0,0,0,0.03)" : "0 25px 60px -15px rgba(0,0,0,0.4)";
+
+  renderCarousel();
 }
 
 document.getElementById('btn-dirty').addEventListener('click', () => { theme = 'dirty'; localStorage.setItem('alvaro-portfolio-theme', theme); applyTheme(); });
